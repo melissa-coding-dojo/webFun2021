@@ -1,16 +1,27 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .wrapper {
     display: flex;
     border: 3px groove #992699;
     padding: 1em;
+    justify-content: space-evenly;
+    width: 75%;
 }
 .column {
     display: flex;
     flex-direction: column;
 }
-.userCard {
+.userCard, .education, .requests, .connections {
     display: flex;
     flex-direction: column;
     border: 2px solid #992699;
+}
+.userCard, .requests, .education {
+    margin-bottom: 2em;
 }
 section {
     display: flex;
@@ -31,7 +42,7 @@ section {
 .content {
     display: flex;
     flex-direction: column;
-    margin-left: 30px;
+    margin: 0 20px 20px 30px;
 }
 .content section {
     display: flex;
@@ -43,6 +54,47 @@ section {
 .content section p {
     margin: 0 1em;
 }
+.light {
+    color: #474646;
+}
 .content section a {
     margin: 0 1em;
+}
+.header {
+    background-color: #3d3c3c;
+    color: #ffffff;
+    align-items: center;
+}
+.header p {
+    margin: 1em;
+    padding: .5em 2em;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+}
+.header h3 {
+    margin: 1em;
+}
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: .5em;
+    margin: .5em;
+}
+.user img {
+    max-width: 75px;
+    border-radius: 50%;
+}
+.user h4 {
+    width: 65px;
+    text-align: center;
+}
+.profImg {
+    justify-self: flex-start;
+}
+.choice {
+    height: 25px;
+}
+.accepted {
+    justify-content: flex-start;
 }
